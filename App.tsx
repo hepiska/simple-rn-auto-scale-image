@@ -7,7 +7,7 @@ const {width} = Dimensions.get('window')
 export default function App() {
   return (
     <View style={styles.container}>
-     <ImageAutoScale source={{uri: "https://ik.imagekit.io/boengkoes/belitung_wmwYVu2DR.jpg"}}  width={200}/>
+     <ImageAutoScale source={{uri: "https://ik.imagekit.io/boengkoes/belitung_wmwYVu2DR.jpg"}}  width={width}/>
     </View>
   );
 }
