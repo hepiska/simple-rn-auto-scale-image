@@ -1,10 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View , Dimensions} from 'react-native';
+import ImageAutoScale from './auto-schale-image'
+
+const {width} = Dimensions.get('window') 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+     <ImageAutoScale source={{uri: "https://ik.imagekit.io/boengkoes/belitung_wmwYVu2DR.jpg"}}  style={{width, height:200}}/>
     </View>
   );
 }
